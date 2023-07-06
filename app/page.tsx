@@ -14,8 +14,8 @@ export default async function Home() {
 	return (
 		<div className="container mx-auto p-8 pb-16">
 			<main>
-				<div className="space-y-1 my-12">
-					<h1 className="text-7xl font-heading">Kieran McClung</h1>
+				<div className="space-y-1 mb-12 md:mt-12">
+					<h1 className="text-5xl md:text-7xl font-heading">Kieran McClung</h1>
 					<p className="font-heading text-2xl mb-2 tracking-wide">
 						What&apos;s he up to now?
 					</p>

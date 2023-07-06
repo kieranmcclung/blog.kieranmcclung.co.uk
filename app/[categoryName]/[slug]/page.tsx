@@ -74,7 +74,7 @@ export default async function Post({
 
 		return (
 			<div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-16 p-8">
-				<main className="max-w-3xl mx-auto my-6 lg:my-12 lg:col-span-2 lg:ml-0">
+				<main className="max-w-full md:max-w-3xl mx-auto md:my-12 lg:col-span-2 lg:ml-0">
 					{post?.featuredImage && post.instaUrl ? (
 						<Image
 							alt={`cover image for ${post.title}`}
@@ -95,19 +95,21 @@ export default async function Post({
 						/>
 					)}
 
-					<div className="space-y-1 my-12">
+					<div className="space-y-1 mb-12 md:mt-12">
 						<div className="flex items-center space-x-4">
 							<DateFormatter dateString={post.date} />
 							<TimeToRead time={post.readTime} />
 						</div>
 
-						<h1 className="text-7xl font-heading">{post.title}</h1>
+						<h1 className="text-5xl md:text-7xl font-heading break-words max-w-full">
+							{post.title}
+						</h1>
 					</div>
 
 					{post.instaUrl ? (
 						<a
 							href={post.instaUrl}
-							className="-mt-8 block font-bold underline decoration-2 decoration-pink-400 hover:text-slate-500"
+							className="-mt-8 mb-12 lg:mb-0 block font-bold underline decoration-2 decoration-pink-400 hover:text-slate-500"
 							target="_blank"
 						>
 							View on Instagram
