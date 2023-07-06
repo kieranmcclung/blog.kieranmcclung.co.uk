@@ -34,5 +34,5 @@
 }
 
 .markdown hr {
-	@apply my-8 border-solid border border-slate-300 dark:;
+	@apply my-8 border-solid border border-slate-300 dark:border-slate-700;
 }
