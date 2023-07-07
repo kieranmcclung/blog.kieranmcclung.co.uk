@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -13,10 +13,9 @@ export default function Navbar() {
 	}
 
 	const pathname = usePathname();
-	const searchParams = useSearchParams();
 	useEffect(() => {
 		setIsOpen(false);
-	}, [pathname, searchParams]);
+	}, [pathname]);
 
 	return (
 		<div className="bg-slate-50 dark:bg-slate-950">
