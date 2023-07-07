@@ -25,6 +25,8 @@ export async function generateMetadata({
 			title: (post.seoTitle || post.title) + " | Kieran McClung",
 			description: post.seoDescription || "",
 			openGraph: {
+				title: (post.seoTitle || post.title) + " | Kieran McClung",
+				description: post.seoDescription || "",
 				images: [post.featuredImage],
 			},
 		};

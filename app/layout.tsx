@@ -22,6 +22,11 @@ const wix_madefor_text = Wix_Madefor_Text({
 export const metadata = {
 	title: "Kieran McClung",
 	description: "What's he up to now?",
+	openGraph: {
+		title: "Kieran McClung",
+		description: "What's he up to now?",
+		images: ["/images/coming-soon.jpg"],
+	},
 };
 
 export default function RootLayout({
