@@ -1,5 +1,16 @@
+import { Metadata } from "next";
 import { getAllPosts } from "../lib/api";
 import PostGrid from "../components/PostGrid";
+
+export const metadata: Metadata = {
+	title: "Kieran McClung",
+	description: "What's he up to now?",
+	openGraph: {
+		title: "Kieran McClung",
+		description: "What's he up to now?",
+		images: ["/images/coming-soon.jpg"],
+	},
+};
 
 export default async function Home() {
 	const posts = await getAllPosts([

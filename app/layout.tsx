@@ -1,6 +1,5 @@
 import "./globals.css";
 import { Staatliches, Wix_Madefor_Text } from "next/font/google";
-
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
@@ -18,16 +17,6 @@ const wix_madefor_text = Wix_Madefor_Text({
 	variable: "--font-wix-madefor-text",
 	weight: ["400", "700", "800"],
 });
-
-export const metadata = {
-	title: "Kieran McClung",
-	description: "What's he up to now?",
-	openGraph: {
-		title: "Kieran McClung",
-		description: "What's he up to now?",
-		images: ["/images/coming-soon.jpg"],
-	},
-};
 
 export default function RootLayout({
 	children,
