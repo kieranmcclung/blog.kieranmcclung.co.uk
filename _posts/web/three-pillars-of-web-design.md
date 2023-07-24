@@ -58,9 +58,9 @@ Depending on the design this will usually be two or three blocks but, again, it 
 
 The only tricky areas are when it comes to the spacing between text elements. Typefaces all have different line heights so it’s proves difficult to set spacing against our keystones. This is where, quelle surprise, I’ll occasionally break the rule and stick to using em units where my keystones don’t work.
 
-![Example layout showing a large header image of space at the top with two boxes beneath](/images/white-space.png)
+![Example layout showing a large header image of space at the top with two boxes beneath](/images/white-space.jpg)
 
-![Example layout showing a hero image and two boxes beneath with the white space highligted](/images/white-space-gutters.png)
+![Example layout showing a hero image and two boxes beneath with the white space highligted](/images/white-space-gutters.jpg)
 
 ## Three pillars
 
