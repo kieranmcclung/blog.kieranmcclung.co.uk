@@ -1,7 +1,7 @@
 ---
 date: "2020-05-10T08:06:51.107Z"
 title: BEM SASS — A Match Made in Heaven
-featuredImage: /images/7c30a127-b08f-4c08-9879-3c78f413b822.jpeg
+featuredImage: /images/7c30a127-b08f-4c08-9879-3c78f413b822.jpg
 seoDescription: >-
   Both BEM and SASS are nothing new when it comes to web development but when
   combined they’re a force to be reckoned with
