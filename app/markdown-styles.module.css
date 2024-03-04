@@ -36,3 +36,16 @@
 .markdown hr {
 	@apply my-8 border-solid border border-slate-300 dark:border-slate-700;
 }
+
+.markdown table {
+	@apply border-collapse my-6 w-full;
+}
+
+.markdown table th,
+.markdown table td {
+	@apply bg-slate-50 border border-slate-300 border-solid px-4 py-2 dark:bg-slate-950 dark:border-slate-700;
+}
+
+.markdown table th {
+	@apply font-bold;
+}
