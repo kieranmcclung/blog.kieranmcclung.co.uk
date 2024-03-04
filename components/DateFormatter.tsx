@@ -11,7 +11,7 @@ const DateFormatter = ({ dateString }: Props) => {
 			className="text-slate-500 text-sm tracking-wide dark:text-slate-400"
 			dateTime={dateString}
 		>
-			{format(date, "LLLL d, yyyy")}
+			{format(date, "LLLL do, yyyy")}
 		</time>
 	);
 };
