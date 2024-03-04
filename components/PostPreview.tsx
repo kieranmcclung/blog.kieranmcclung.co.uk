@@ -39,7 +39,7 @@ export default function PostPreview({ post }: { post: Items }) {
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 384 512"
-							className="w-6 h-6 fill-pink-400 inline-block -bottom-2 relative transition-colors group-hover:fill-slate-500"
+							className="w-6 h-6 fill-pink-400 inline-block -bottom-0.5 relative transition-colors group-hover:fill-slate-500"
 						>
 							<path d="M320 96h32v32V352v32H288V352 205.3L86.6 406.6 64 429.3 18.7 384l22.6-22.6L242.7 160H96 64V96H96 320z"></path>
 						</svg>
