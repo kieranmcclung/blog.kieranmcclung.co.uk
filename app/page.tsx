@@ -4,11 +4,13 @@ import PostGrid from "../components/PostGrid";
 
 export const metadata: Metadata = {
 	title: "Kieran McClung",
-	description: "What's he up to now?",
+	description: "What's he up to now? A blog by Kieran McClung",
 	openGraph: {
 		title: "Kieran McClung",
-		description: "What's he up to now?",
-		images: ["/images/coming-soon.jpg"],
+		description: "What's he up to now? A blog by Kieran McClung",
+		images: [
+			"https://blog.kieranmcclung.co.uk/images/adam-miller-dbaz0xhckpy-unsplash-crop.jpg",
+		],
 	},
 };
 
