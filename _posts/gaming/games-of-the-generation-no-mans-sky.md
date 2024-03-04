@@ -6,7 +6,7 @@ featuredImage: /images/NMSConceptArtWallpap.webp
 
 [Watch on YouTube](https://youtu.be/K9Zy9diF6lI)
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 No Mans Sky — the game that sold a PlayStation 4.
 

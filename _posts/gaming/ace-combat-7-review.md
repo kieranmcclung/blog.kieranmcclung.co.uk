@@ -6,7 +6,7 @@ featuredImage: /images/ace-combat-7_-skies-unknown_20190114220005-1920x1080.jpg
 
 [Watch on YouTube](https://youtu.be/joZ_-iI3Pg8)
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 Starting the year on a high
 

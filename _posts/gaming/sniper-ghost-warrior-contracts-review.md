@@ -4,7 +4,7 @@ title: Sniper Ghost Warrior Contracts Review
 featuredImage: /images/sgw-contracts-key-art-1920x1080.jpg
 ---
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 They call me The Seeker
 

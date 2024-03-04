@@ -6,7 +6,7 @@ featuredImage: /images/screenshot03.jpg
 
 [Watch on YouTube](https://youtu.be/jN_8fnLGGOk)
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 Hold me closer, tiny Lancer
 

@@ -6,7 +6,7 @@ featuredImage: /images/5e30748c-5e58-40dc-a9b4-2f6e7f44743b.jpg
 
 [Watch on YouTube](https://youtu.be/i4V1l3zo-gw)
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 Toykyo Drift
 

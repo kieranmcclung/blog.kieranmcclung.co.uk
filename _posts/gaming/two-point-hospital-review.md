@@ -4,7 +4,7 @@ title: Two Point Hospital Review
 featuredImage: /images/two-point-hospital-artwork.jpg
 ---
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 Dream Hospital
 

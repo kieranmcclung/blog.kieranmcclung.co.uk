@@ -4,7 +4,7 @@ title: "Fortnite – Building hype around a purple cube"
 featuredImage: /images/Fortnite_20180921204248-1920x1080.jpg
 ---
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 You know the drill by now
 

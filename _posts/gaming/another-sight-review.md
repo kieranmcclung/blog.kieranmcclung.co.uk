@@ -4,7 +4,7 @@ title: Another Sight Review
 featuredImage: /images/another-sight-review-1920x1080.jpg
 ---
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 Beauty is in the eye of the beholder, but this beholder is unfortunately blind.
 

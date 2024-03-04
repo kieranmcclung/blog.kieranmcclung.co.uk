@@ -6,7 +6,7 @@ featuredImage: /images/hypercharge-unboxed-artwork-1920x1080.jpg
 
 [Watch on YouTube](https://youtu.be/Nbvc1idUbqY)
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 Toytal Annihilation
 

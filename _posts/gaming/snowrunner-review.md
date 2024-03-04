@@ -6,7 +6,7 @@ featuredImage: /images/snowrunner_20200422215044.jpg
 
 [Watch on YouTube](https://youtu.be/knmVWV2dx0M)
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 A Song of Ice and Tyre
 

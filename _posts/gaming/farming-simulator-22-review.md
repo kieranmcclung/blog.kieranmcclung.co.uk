@@ -7,7 +7,7 @@ readTime: 9
 
 [Watch on YouTube](https://youtu.be/5-VQSQNwEMQ)
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 Sow-sow
 
