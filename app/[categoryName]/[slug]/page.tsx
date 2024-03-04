@@ -21,13 +21,22 @@ export async function generateMetadata({
 	]);
 
 	if (typeof post !== "undefined") {
+		const absUrlImage = `https://blog.kieranmcclung.co.uk${post.featuredImage}`;
+
 		return {
 			title: (post.seoTitle || post.title) + " | Kieran McClung",
 			description: post.seoDescription || "",
 			openGraph: {
 				title: (post.seoTitle || post.title) + " | Kieran McClung",
 				description: post.seoDescription || "",
-				images: [post.featuredImage],
+				images: [
+					{
+						url: absUrlImage,
+						width: 720,
+						height: 300,
+						alt: `cover image for ${post.title}`,
+					},
+				],
 			},
 		};
 	} else {
