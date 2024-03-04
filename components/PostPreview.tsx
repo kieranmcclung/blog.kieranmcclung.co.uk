@@ -24,9 +24,15 @@ export default function PostPreview({ post }: { post: Items }) {
 					</figure>
 				)}
 				<div className="mt-6 space-y-2">
-					<div className="flex items-center space-x-4">
+					<div className="flex items-center space-x-1.5">
 						<DateFormatter dateString={post.date} />
-						<TimeToRead time={post.readTime} />
+						{(post?.readTime && (
+							<>
+								<span className="text-sm text-gray-500">&bull;</span>
+								<TimeToRead time={post.readTime} />
+							</>
+						)) ||
+							""}
 					</div>
 					<h2 className="font-heading text-3xl md:text-4xl transition-colors group-hover:text-slate-500">
 						{post.title}{" "}
