@@ -1,6 +1,7 @@
 "use client";
 
 import ReactMarkdown from "react-markdown";
+import RemarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import Image from "next/image";
@@ -50,6 +51,7 @@ const PostBody = ({ content, imageSizes }: Props) => {
 		<ReactMarkdown
 			className={markdownStyles["markdown"]}
 			components={MarkdownComponents}
+			remarkPlugins={[RemarkGfm]}
 		>
 			{content}
 		</ReactMarkdown>
