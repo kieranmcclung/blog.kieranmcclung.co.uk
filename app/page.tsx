@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { getAllPosts } from "../lib/api";
+import Pagination from "../components/Pagination";
 import PostGrid from "../components/PostGrid";
 
 export const metadata: Metadata = {
@@ -24,6 +25,11 @@ export default async function Home() {
 		"readTime",
 	]);
 
+	const totalPosts = posts.length;
+	const postsPerPage = 12;
+	const paginatedPosts =
+		posts.length > postsPerPage - 1 ? posts.slice(0, postsPerPage) : posts;
+
 	return (
 		<div className="container mx-auto p-8 pb-16">
 			<main>
@@ -34,7 +40,9 @@ export default async function Home() {
 					</p>
 				</div>
 
-				<PostGrid recentPosts={posts} />
+				<PostGrid recentPosts={paginatedPosts} />
+
+				<Pagination totalPosts={totalPosts} currentPage={1} />
 			</main>
 		</div>
 	);
