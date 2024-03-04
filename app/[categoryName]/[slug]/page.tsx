@@ -103,7 +103,7 @@ export default async function Post({
 							<TimeToRead time={post.readTime} />
 						</div>
 
-						<h1 className="text-5xl md:text-7xl font-heading break-words max-w-full">
+						<h1 className="text-5xl md:text-6xl font-heading break-words max-w-full">
 							{post.title}
 						</h1>
 					</div>

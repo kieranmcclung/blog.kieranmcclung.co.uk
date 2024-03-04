@@ -10,7 +10,7 @@
 }
 
 .markdown h2 {
-	@apply font-heading text-4xl md:text-5xl mt-10 -mb-2 leading-snug;
+	@apply font-heading text-3xl md:text-4xl mt-10 -mb-2 leading-snug;
 }
 
 .markdown h3 {
