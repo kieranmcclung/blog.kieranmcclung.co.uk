@@ -40,7 +40,7 @@ export default async function Category({
 		<div className="container mx-auto p-8 pb-16">
 			<main>
 				<div className="mb-12 md:mt-12">
-					<h1 className="text-5xl md:text-7xl font-heading">
+					<h1 className="text-5xl md:text-6xl font-heading">
 						{params.categoryName}
 					</h1>
 				</div>

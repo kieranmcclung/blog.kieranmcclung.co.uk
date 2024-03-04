@@ -1,7 +1,7 @@
 ---
 date: "2022-09-03T09:39:53.422Z"
 title: "Is gaming still affordable?"
-featuredImage: /images/jr-korpa-9XngoIpxcEo-unsplash.jpg
+featuredImage: /images/jp-valery-hfrDZAXwb5c-unsplash.jpg
 ---
 
 **Originally posted on nextgenbase.com**
@@ -30,23 +30,23 @@ Rising energy prices mean it's significantly more expensive to use these console
 
 ### Hourly cost of playing games
 
-| **Console**   | **kWh (cost pence)** |
-| ------------- | -------------------- |
-| PS5 (Disc)    | 10.45p               |
-| PS5 (Digital) | 10.85p               |
-| Xbox Series X | 7.95p                |
-| Xbox Series S | 3.84p                |
+|  **Console**  | **kWh (cost pence)** |
+| :-----------: | :------------------: |
+|  PS5 (Disc)   |        10.45p        |
+| PS5 (Digital) |        10.85p        |
+| Xbox Series X |        7.95p         |
+| Xbox Series S |        3.84p         |
 
 _Calculations based on the current kWh price (52p) as outlined in Ofgem's recent report [[1]](https://www.ofgem.gov.uk/check-if-energy-price-cap-affects-you) using power output provided by Sony [[2]](https://www.playstation.com/en-gb/legal/ecodesign/) and Xbox [[3]](https://support.xbox.com/en-GB/help/hardware-network/power/learn-about-power-modes) at the time of writing_
 
 ### Cost to complete Elden Ring\*
 
-| **Console**   | **Cost to complete** |
-| ------------- | -------------------- |
-| PS5 (Disc)    | £10.65               |
-| PS5 (Digital) | £11.06               |
-| Xbox Series X | £8.10                |
-| Xbox Series S | £3.91                |
+|  **Console**  | **Cost to complete** |
+| :-----------: | :------------------: |
+|  PS5 (Disc)   |        £10.65        |
+| PS5 (Digital) |        £11.06        |
+| Xbox Series X |        £8.10         |
+| Xbox Series S |        £3.91         |
 
 \*_console running cost only._
 
@@ -66,4 +66,4 @@ It’s all hyperbolic, and while gaming is unlikely to collapse any time soon, t
 
 I can write about how much I hate the current government and how the thought of not being able to play games makes me sad, but there's a serious side to all this. A lot of people in the UK are currently standing on a knife's edge staring into a vast chasm of uncertainty. It's a situation we're not familiar with and nothing is being done to help. All we have is the knowledge that we’re all going through this shit together. Does that make it better? No, but it's all we've got. Be kind to one another, look after one another, [seek advice](https://www.citizensadvice.org.uk/consumer/energy/energy-supply/get-help-paying-your-bills/struggling-to-pay-your-energy-bills/), or take to the streets and make your voice heard. Or you could buy yourself a new kettle.
 
-_Featured Image by [Jr Korpa](https://unsplash.com/@jrkorpa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/abstract-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
+_Featured Image by [Jp Valery](https://unsplash.com/@jpvalery?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/burning-banknotes-hfrDZAXwb5c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)_

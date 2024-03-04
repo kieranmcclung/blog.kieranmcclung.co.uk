@@ -22,7 +22,7 @@ export default function Navbar() {
 			<div className="flex items-center justify-start py-2 max-w-7xl mx-auto">
 				<a
 					href="/"
-					className="font-heading text-2xl px-8 py-4 tracking-wide flex-initial transition-colors hover:text-slate-500"
+					className="font-heading text-2xl px-8 py-4 flex-initial transition-colors hover:text-slate-500"
 				>
 					Kieran McClung
 				</a>
@@ -86,7 +86,7 @@ type NavLink = {
 const NavLink = ({ href, children }: NavLink) => {
 	return (
 		<Link
-			className="font-bold text-xl sm:text-base underline decoration-2 decoration-pink-400 p-4 transition-colors hover:text-slate-500"
+			className="font-bold decoration-2 decoration-pink-400 p-4 text-xl tracking-wide transition-colors underline hover:text-slate-500 sm:text-base"
 			href={href}
 		>
 			{children}

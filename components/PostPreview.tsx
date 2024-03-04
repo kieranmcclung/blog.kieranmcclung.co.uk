@@ -28,7 +28,7 @@ export default function PostPreview({ post }: { post: Items }) {
 						<DateFormatter dateString={post.date} />
 						<TimeToRead time={post.readTime} />
 					</div>
-					<h2 className="font-heading text-4xl md:text-5xl transition-colors group-hover:text-slate-500">
+					<h2 className="font-heading text-3xl md:text-4xl transition-colors group-hover:text-slate-500">
 						{post.title}{" "}
 						<svg
 							xmlns="http://www.w3.org/2000/svg"

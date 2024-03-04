@@ -21,13 +21,22 @@ export async function generateMetadata({
 	]);
 
 	if (typeof post !== "undefined") {
+		const absUrlImage = `https://blog.kieranmcclung.co.uk${post.featuredImage}`;
+
 		return {
 			title: (post.seoTitle || post.title) + " | Kieran McClung",
 			description: post.seoDescription || "",
 			openGraph: {
 				title: (post.seoTitle || post.title) + " | Kieran McClung",
 				description: post.seoDescription || "",
-				images: [post.featuredImage],
+				images: [
+					{
+						url: absUrlImage,
+						width: 720,
+						height: 300,
+						alt: `cover image for ${post.title}`,
+					},
+				],
 			},
 		};
 	} else {
@@ -103,7 +112,7 @@ export default async function Post({
 							<TimeToRead time={post.readTime} />
 						</div>
 
-						<h1 className="text-5xl md:text-7xl font-heading break-words max-w-full">
+						<h1 className="text-5xl md:text-6xl font-heading break-words max-w-full">
 							{post.title}
 						</h1>
 					</div>

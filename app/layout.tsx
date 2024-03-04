@@ -1,13 +1,13 @@
 import "./globals.css";
-import { Staatliches, Wix_Madefor_Text } from "next/font/google";
+import { Inter_Tight, Wix_Madefor_Text } from "next/font/google";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
-const staatliches = Staatliches({
+const inter_tight = Inter_Tight({
 	display: "swap",
 	subsets: ["latin"],
-	variable: "--font-staatliches",
-	weight: ["400"],
+	variable: "--font-inter-tight",
+	weight: ["900"],
 });
 
 const wix_madefor_text = Wix_Madefor_Text({
@@ -26,7 +26,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${staatliches.variable} ${wix_madefor_text.variable} bg-slate-100 font-sans text-slate-900 dark:bg-slate-900 dark:text-slate-200`}
+				className={`${inter_tight.variable} ${wix_madefor_text.variable} bg-slate-100 font-sans text-slate-900 dark:bg-slate-900 dark:text-slate-200`}
 			>
 				<Navbar />
 				<div className="max-w-7xl mx-auto">{children}</div>
