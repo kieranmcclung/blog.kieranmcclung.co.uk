@@ -4,7 +4,7 @@ title: Fishing Sim World Review
 featuredImage: /images/Fishing-Sim-World-Artwork-1920x1080.jpg
 ---
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 Sturgeon Simulator
 

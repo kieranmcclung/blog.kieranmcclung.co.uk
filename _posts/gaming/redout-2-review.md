@@ -6,7 +6,7 @@ featuredImage: /images/ss_5f1aeb2c8a66a6113b6e5c4e0ef1942a9baef38e.jpg
 
 [Watch on YouTube](https://youtu.be/QWmi-qCQHZg)
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 Speeding, fine.
 

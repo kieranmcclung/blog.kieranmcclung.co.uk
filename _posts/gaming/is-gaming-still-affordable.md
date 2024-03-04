@@ -4,7 +4,7 @@ title: "Is gaming still affordable?"
 featuredImage: /images/jp-valery-hfrDZAXwb5c-unsplash.jpg
 ---
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 The UK is in a bit of a state. A state preventing even the most avid flagshagger from mustering up a semi. We're heading full-speed into an energy crisis. Bills are rising by 80% next month, with a further increase to happen early next year. The only things distracting us from wondering how we can pay our bills are the news reports giving a celebratory pat on the back of the energy companies for making record-breaking profits. Supermarkets are offering loans to help people afford their weekly shopping, the elderly are riding buses to keep warm, and the government has given the a-okay to dump literal human shit into the sea. Rule Britannia.
 

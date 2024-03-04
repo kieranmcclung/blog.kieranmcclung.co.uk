@@ -6,7 +6,7 @@ featuredImage: /images/Farming-Simulator-19_20181119214652-1920x1080.jpg
 
 [Watch on YouTube](https://youtu.be/lhzQ8qSrtiA)
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 Oats and Sows
 

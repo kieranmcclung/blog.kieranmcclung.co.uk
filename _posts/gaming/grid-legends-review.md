@@ -6,7 +6,7 @@ featuredImage: /images/grid-legends-1080-blog-1645762125756.jpg
 
 [Watch on YouTube](https://youtu.be/rLdaMbM8AIU)
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 Seneca? I hardly know her!
 

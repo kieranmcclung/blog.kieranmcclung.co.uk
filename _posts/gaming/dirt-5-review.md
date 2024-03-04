@@ -6,7 +6,7 @@ featuredImage: /images/dirt_5_20201101001122.jpg
 
 [Watch on YouTube](https://youtu.be/JX06332fHaw)
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 Ridin’ Dirty
 

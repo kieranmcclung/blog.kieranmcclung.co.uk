@@ -4,7 +4,7 @@ title: "Fortnite – Building hype around a crack in the sky"
 featuredImage: /images/Fortnite_20180705001544.jpg
 ---
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 It’s a bird! It’s a plane! It’s a… crack?
 

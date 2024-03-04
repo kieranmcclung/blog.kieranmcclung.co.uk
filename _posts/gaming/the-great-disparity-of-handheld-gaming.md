@@ -4,7 +4,7 @@ title: The Great Disparity of Handheld Gaming
 featuredImage: /images/handheld-gaming-father-son-1280x720.jpg
 ---
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 As a young man-child, I wouldn’t go far without my trusty sidekick, the Game Boy Color. The ability to play games anywhere was some kind of witchcraft that allowed me to succumb to the temptations of gaming without needing to be glued to a TV. Although, you did need to stay out of direct sunlight and have an ammo-belt filled with double As.
 

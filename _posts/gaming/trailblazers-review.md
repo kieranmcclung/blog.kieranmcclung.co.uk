@@ -4,7 +4,7 @@ title: Trailblazers Review
 featuredImage: /images/trailblazers_003-1920x1080.jpg
 ---
 
-**Originally posted on nextgenbase.com**
+**Originally posted on [Next Gen Base](https://www.nextgenbase.com/)**.
 
 Paint the Ground Red (or yellow, green, blue…)
 
