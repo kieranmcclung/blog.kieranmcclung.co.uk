@@ -2,7 +2,7 @@ import fs from "fs";
 import { readdir } from "fs/promises";
 import { join } from "path";
 import matter from "gray-matter";
-import getReadTime from "./read-time";
+import getReadTime from "./readTime";
 
 const postsDirectory = join(process.cwd(), "_posts");
 
