@@ -76,10 +76,7 @@ export default async function Post({
 			params.categoryName
 		);
 
-		let totalPosts = 4;
-		if (post.instaUrl) {
-			totalPosts = 3;
-		}
+		let totalPosts = 3;
 		const relatedPosts =
 			posts.length > totalPosts - 1 ? posts.slice(0, totalPosts) : posts;
 
@@ -109,13 +106,12 @@ export default async function Post({
 					<div className="space-y-2 mb-12 md:mt-12">
 						<div className="flex items-center space-x-1.5">
 							<DateFormatter dateString={post.date} />
-							{(post?.readTime && (
+							{post?.readTime && post.readTime != "0" && (
 								<>
 									<span className="text-sm text-gray-500">&bull;</span>
 									<TimeToRead time={post.readTime} />
 								</>
-							)) ||
-								""}
+							)}
 						</div>
 
 						<h1 className="text-5xl md:text-6xl font-heading break-words max-w-full">

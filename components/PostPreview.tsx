@@ -26,7 +26,7 @@ export default function PostPreview({ post }: { post: Items }) {
 				<div className="mt-6 space-y-2">
 					<div className="flex items-center space-x-1.5">
 						<DateFormatter dateString={post.date} />
-						{(post?.readTime && (
+						{(post?.readTime && post.readTime != "0" && (
 							<>
 								<span className="text-sm text-gray-500">&bull;</span>
 								<TimeToRead time={post.readTime} />
@@ -34,7 +34,7 @@ export default function PostPreview({ post }: { post: Items }) {
 						)) ||
 							""}
 					</div>
-					<h2 className="font-heading text-3xl md:text-4xl transition-colors group-hover:text-slate-500">
+					<h2 className="font-heading text-3xl text-pretty md:text-4xl transition-colors group-hover:text-slate-500">
 						{post.title}{" "}
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
