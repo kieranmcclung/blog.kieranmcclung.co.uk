@@ -50,7 +50,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
 				<div className="space-y-1 mb-12 md:mt-12">
 					<h1 className="text-5xl md:text-6xl font-heading">Kieran McClung</h1>
 					<p className="text-2xl mb-2 tracking-wide">
-						Page {currentPage} of what he's been up to.
+						Page {currentPage} of what he&apos;s been up to.
 					</p>
 				</div>
 
