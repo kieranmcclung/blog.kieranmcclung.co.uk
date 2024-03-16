@@ -120,18 +120,6 @@ export default async function Post({
 						</h1>
 					</div>
 
-					{post.instaUrl ? (
-						<a
-							href={post.instaUrl}
-							className="-mt-8 mb-12 lg:mb-0 block font-bold underline decoration-2 decoration-pink-400 hover:text-slate-500"
-							target="_blank"
-						>
-							View on Instagram
-						</a>
-					) : (
-						""
-					)}
-
 					<div className="w-full">
 						<PostBody content={post.content} imageSizes={imageSizes} />
 
@@ -158,6 +146,18 @@ export default async function Post({
 							""
 						)}
 					</div>
+
+					{post.instaUrl ? (
+						<a
+							href={post.instaUrl}
+							className="block font-bold underline decoration-2 decoration-pink-400 text-lg hover:text-slate-500"
+							target="_blank"
+						>
+							View on Instagram
+						</a>
+					) : (
+						""
+					)}
 				</main>
 				<RelatedPosts relatedPosts={relatedPosts} />
 			</div>
