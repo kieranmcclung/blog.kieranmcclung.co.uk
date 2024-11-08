@@ -1,14 +1,7 @@
 import "./globals.css";
-import { Inter_Tight, Wix_Madefor_Text } from "next/font/google";
+import { IBM_Plex_Mono, Wix_Madefor_Text } from "next/font/google";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-
-const inter_tight = Inter_Tight({
-	display: "swap",
-	subsets: ["latin"],
-	variable: "--font-inter-tight",
-	weight: ["900"],
-});
 
 const wix_madefor_text = Wix_Madefor_Text({
 	display: "swap",
@@ -16,6 +9,13 @@ const wix_madefor_text = Wix_Madefor_Text({
 	subsets: ["latin"],
 	variable: "--font-wix-madefor-text",
 	weight: ["400", "700", "800"],
+});
+
+const ibm_plex_mono = IBM_Plex_Mono({
+	display: "swap",
+	subsets: ["latin"],
+	variable: "--font-ibm-plex-mono",
+	weight: ["400", "700"],
 });
 
 export default function RootLayout({
@@ -26,11 +26,13 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${inter_tight.variable} ${wix_madefor_text.variable} bg-slate-100 font-sans text-slate-900 dark:bg-slate-900 dark:text-slate-200`}
+				className={`${ibm_plex_mono.variable} ${wix_madefor_text.variable} bg-white font-sans grid grid-cols-site-layout text-black dark:bg-black dark:text-white`}
 			>
 				<Navbar />
-				<div className="max-w-7xl mx-auto">{children}</div>
-				<Footer />
+				<div className="">
+					{children}
+					<Footer />
+				</div>
 			</body>
 		</html>
 	);
