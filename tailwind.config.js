@@ -13,8 +13,11 @@ module.exports = {
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},
 			fontFamily: {
-				heading: ["var(--font-inter-tight)"],
+				heading: ["var(--font-ibm-plex-mono)"],
 				sans: ["var(--font-wix-madefor-text)"],
+			},
+			gridTemplateColumns: {
+				"site-layout": "auto 1fr",
 			},
 		},
 	},
