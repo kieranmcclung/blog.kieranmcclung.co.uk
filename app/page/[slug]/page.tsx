@@ -15,7 +15,8 @@ export async function generateMetadata({
 		openGraph: {
 			title: "Kieran McClung",
 			description:
-				"What's he up to now? A blog by Kieran McClung | Page" + params.slug,
+				"What's he up to now? A blog by Kieran McClung | Page" +
+				params.slug,
 			images: [
 				"https://blog.kieranmcclung.co.uk/images/adam-miller-dbaz0xhckpy-unsplash-crop.jpg",
 			],
@@ -45,19 +46,17 @@ export default async function Post({ params }: { params: { slug: string } }) {
 			: posts.slice(pagination - postsPerPage, posts.length);
 
 	return (
-		<div className="container mx-auto p-8 pb-16">
-			<main>
-				<div className="space-y-1 mb-12 md:mt-12">
-					<h1 className="text-5xl md:text-6xl font-heading">Kieran McClung</h1>
-					<p className="text-2xl mb-2 tracking-wide">
-						Page {currentPage} of what he&apos;s been up to.
-					</p>
-				</div>
+		<main>
+			<div className="p-8">
+				<h1 className="font-heading text-2xl">
+					What's he up to?{" "}
+					<span className="block text-sm">Page {currentPage}</span>
+				</h1>
+			</div>
 
-				<PostGrid recentPosts={paginatedPosts} />
+			<PostGrid recentPosts={paginatedPosts} />
 
-				<Pagination totalPosts={totalPosts} currentPage={currentPage} />
-			</main>
-		</div>
+			<Pagination totalPosts={totalPosts} currentPage={currentPage} />
+		</main>
 	);
 }
