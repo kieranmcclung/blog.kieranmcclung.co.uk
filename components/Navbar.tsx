@@ -15,47 +15,42 @@ export default function Navbar() {
 	const pathname = usePathname();
 	useEffect(() => {
 		setIsOpen(false);
+		setYear(new Date().getFullYear());
 	}, [pathname]);
 
-	return (
-		<div className="bg-slate-50 dark:bg-slate-950">
-			<div className="flex items-center justify-start py-2 max-w-7xl mx-auto">
-				<a
-					href="/"
-					className="font-heading text-2xl px-8 py-4 flex-initial transition-colors hover:text-slate-500"
-				>
-					Kieran McClung
-				</a>
+	const [year, setYear] = useState(new Date().getFullYear());
 
+	return (
+		<div className="flex flex-col gap-4 pt-8 px-8 md:h-svh md:pb-8 md:sticky md:top-0 md:w-48 xl:w-64">
+			<a
+				href="/"
+				className="font-heading text-sm transition-colors hover:text-indigo-600 dark:hover:text-indigo-500"
+			>
+				Kieran McClung
+			</a>
+			<div className="flex items-center justify-start -ml-2">
 				<button
 					id="nav-toggle"
 					onClick={() => toggleMenu()}
-					className="flex-initial ml-auto mr-8 z-20 sm:hidden"
+					className="absolute -mt-1 right-8 text-indigo-600 top-8 z-20 dark:text-indigo-500 md:hidden"
 					aria-label="Toggle navigation menu"
 				>
 					<svg
-						className="w-8 h-8"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
 						xmlns="http://www.w3.org/2000/svg"
+						className="w-8 h-8 fill-current"
+						viewBox="0 -960 960 960"
 					>
-						<path
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							strokeWidth={2}
-							d="M4 6h16M4 12h16M4 18h16"
-						/>
+						<path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
 					</svg>
 				</button>
 				<nav
 					id="main-nav"
 					className={`${
 						(isOpen ? "" : "hidden") +
-						" fixed h-full w-full inset-0 bg-slate-100 z-10 sm:h-auto sm:w-auto sm:static sm:block sm:bg-transparent dark:bg-slate-900"
+						" bg-white fixed h-full py-4 w-full inset-0 z-10 sm:h-auto sm:static sm:block sm:bg-transparent dark:bg-black"
 					}`}
 				>
-					<ul className="flex flex-col items-center gap-y-8 justify-center h-full sm:h-auto sm:flex-row sm:space-x-2 sm:justify-start">
+					<ul className="flex flex-col gap-y-2 h-full items-center justify-center md:items-start">
 						<li>
 							<NavLink href="/art">Art</NavLink>
 						</li>
@@ -74,6 +69,10 @@ export default function Navbar() {
 					</ul>
 				</nav>
 			</div>
+
+			<span className="font-heading hidden mb-0 mt-auto text-sm md:block">
+				&copy; {year}
+			</span>
 		</div>
 	);
 }
@@ -86,7 +85,7 @@ type NavLink = {
 const NavLink = ({ href, children }: NavLink) => {
 	return (
 		<Link
-			className="font-bold decoration-2 decoration-pink-400 p-4 text-xl tracking-wide transition-colors underline hover:text-slate-500 sm:text-base"
+			className="block font-heading p-2 text-indigo-600 tracking-wide transition-colors hover:text-black dark:text-indigo-500 dark:hover:text-white md:text-sm"
 			href={href}
 		>
 			{children}
