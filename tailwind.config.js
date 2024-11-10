@@ -19,6 +19,9 @@ module.exports = {
 			gridTemplateColumns: {
 				"site-layout": "auto 1fr",
 			},
+			screens: {
+				"3xl": "1920px",
+			},
 		},
 	},
 	plugins: [],
