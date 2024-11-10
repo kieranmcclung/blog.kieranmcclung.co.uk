@@ -26,10 +26,10 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${ibm_plex_mono.variable} ${wix_madefor_text.variable} bg-white font-sans grid grid-cols-site-layout text-black dark:bg-black dark:text-white`}
+				className={`${ibm_plex_mono.variable} ${wix_madefor_text.variable} bg-white font-sans text-black md:grid md:grid-cols-site-layout dark:bg-black dark:text-white`}
 			>
 				<Navbar />
-				<div className="">
+				<div>
 					{children}
 					<Footer />
 				</div>
