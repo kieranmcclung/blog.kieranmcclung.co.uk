@@ -44,12 +44,11 @@ export async function generateMetadata({
 	}
 }
 
-export default async function Post({
-	params,
-}: {
-	params: { slug: string; categoryName: string };
-}) {
-	const post = getPostBySlug(params.slug, params.categoryName, [
+type PostParams = Promise<{ slug: string; categoryName: string }>;
+
+export default async function Post({ params }: { params: PostParams }) {
+	const { slug, categoryName } = await params;
+	const post = getPostBySlug(slug, categoryName, [
 		"title",
 		"date",
 		"readTime",
@@ -72,8 +71,8 @@ export default async function Post({
 				"slug",
 				"readTime",
 			],
-			params.slug,
-			params.categoryName
+			slug,
+			categoryName
 		);
 
 		let totalPosts = 3;
