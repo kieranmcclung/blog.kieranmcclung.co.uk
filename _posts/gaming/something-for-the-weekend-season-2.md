@@ -1,7 +1,7 @@
 ---
 date: "2023-09-22T12:00:53.422Z"
 title: New episodes of Something for the Weekend
-featuredImage: /images/sftw-s2.png
+featuredImage: /images/sftw-s2.jpg
 ---
 
 All four episodes of "Season 2" of Something for the Weekend are out now!

@@ -1,7 +1,7 @@
 ---
 date: "2024-08-28T21:00:00.000Z"
 title: Portfolio for days
-featuredImage: /images/new-portfolio.jpg
+featuredImage: /images/hero-fallback.jpg
 seoDescription: He's only gone and bloody finished his portfolio website!
 ---
 
