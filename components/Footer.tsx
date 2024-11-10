@@ -1,14 +1,19 @@
-const date = new Date();
-const year = date.getFullYear();
+"use client";
+
+import { useEffect, useState } from "react";
 
 export default function Footer() {
+	const [year, setYear] = useState(new Date().getFullYear());
+
+	useEffect(() => {
+		setYear(new Date().getFullYear());
+	}, []);
+
 	return (
-		<footer className="bg-slate-50 dark:bg-slate-950">
-			<div className="py-6 max-w-7xl mx-auto text-center">
-				There we are then
-				<br />
-				<span className="text-sm">Kieran McClung &copy; {year}</span>
-			</div>
+		<footer className="py-6 max-w-7xl mx-auto text-center">
+			<span className="font-heading mb-0 mt-auto text-sm md:hidden">
+				&copy; {year}
+			</span>
 		</footer>
 	);
 }
