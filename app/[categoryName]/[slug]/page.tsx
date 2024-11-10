@@ -82,65 +82,58 @@ export default async function Post({
 
 		return (
 			<div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-16 p-8">
-				<main className="max-w-full md:max-w-3xl mx-auto md:my-12 lg:col-span-2 lg:ml-0">
-					{post?.featuredImage && post.instaUrl ? (
-						<Image
-							alt={`cover image for ${post.title}`}
-							src={post.featuredImage}
-							width={720}
-							height={720}
-							className="aspect-square object-cover mb-8 rounded-lg"
-							style={{ width: "100%" }}
-						/>
-					) : (
-						<Image
-							alt={`cover image for ${post.title}`}
-							src={post.featuredImage}
-							width={720}
-							height={300}
-							className="aspect-video object-cover mb-8 rounded-lg"
-							style={{ width: "100%" }}
-						/>
-					)}
-
-					<div className="space-y-2 mb-12 md:mt-12">
-						<div className="flex items-center space-x-1.5">
-							<DateFormatter dateString={post.date} />
-							{(post?.readTime && post.readTime != "0" && (
-								<>
-									<span className="text-sm text-gray-500">&bull;</span>
-									<TimeToRead time={post.readTime} />
-								</>
-							)) ||
-								""}
+				<main className="max-w-full md:max-w-3xl mx-auto lg:col-span-2 lg:ml-0">
+					<div className="mb-6 relative">
+						{post?.featuredImage && (
+							<figure className="block overflow-hidden rounded-xl">
+								<Image
+									alt={`cover image for ${post.title}`}
+									src={post.featuredImage}
+									height="1080"
+									width="1920"
+									className="aspect-square object-cover md:aspect-video"
+								/>
+							</figure>
+						)}
+						<div className="absolute bg-white bottom-0 left-0 max-w-[90%] py-6 pr-6 rounded-tr-xl dark:bg-black md:pl-6">
+							<div className="flex flex-wrap items-center mb-2 gap-x-1.5">
+								<DateFormatter dateString={post.date} />
+								{(post?.readTime && post.readTime != "0" && (
+									<>
+										<span className="text-xs">&bull;</span>
+										<TimeToRead time={post.readTime} />
+									</>
+								)) ||
+									""}
+							</div>
+							<h1 className="font-heading text-2xl text-pretty">
+								{post.title}
+							</h1>
 						</div>
-
-						<h1 className="text-5xl md:text-6xl font-heading break-words max-w-full">
-							{post.title}
-						</h1>
 					</div>
 
-					<div className="w-full">
+					<div className="w-full md:pl-6">
 						<PostBody content={post.content} imageSizes={imageSizes} />
 
 						{post.showDonationLink ? (
-							<div className="mt-8 p-4 rounded-md bg-slate-50 dark:bg-slate-950 flex items-center">
+							<div className="border border-black inline-flex items-center justify-center mt-4 pl-4 pr-8 rounded-xl dark:border-white">
 								<Image
 									src="/kofi_s_logo_nolabel.png"
 									alt="Ko-fi logo"
 									width={64}
 									height={64}
 								/>
-								<div>
-									If you found this post useful, feel free to leave me a tip on{" "}
+								<p>
+									If you found this post useful, feel free to leave me
+									a tip on{" "}
 									<a
-										className="font-bold underline decoration-2 decoration-pink-400 hover:text-slate-500 transition-colors"
+										className="font-bold text-indigo-600 transition-colors dark:text-indigo-500 hover:text-black dark:hover:text-white"
 										href="https://ko-fi.com/kieranmcclung"
 									>
 										ko-fi
 									</a>{" "}
 									xx
-								</div>
+								</p>
 							</div>
 						) : (
 							""
