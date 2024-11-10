@@ -3,11 +3,7 @@ type TimeToRead = {
 };
 
 const TimeToRead = ({ time }: TimeToRead) => {
-	return (
-		<span className="text-slate-500 text-sm tracking-wide dark:text-slate-400">
-			{time} min read
-		</span>
-	);
+	return <span className="text-xs">{time} minute read</span>;
 };
 
 export default TimeToRead;
