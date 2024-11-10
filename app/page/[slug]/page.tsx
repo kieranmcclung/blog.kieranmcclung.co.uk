@@ -3,12 +3,13 @@ import { getAllPosts } from "../../../lib/api";
 import Pagination from "../../../components/Pagination";
 import PostGrid from "../../../components/PostGrid";
 
-export async function generateMetadata({
-	params,
-}: {
-	params: { slug: string };
-}): Promise<Metadata> {
-	return {
+export async function generateMetadata(
+    props: {
+        params: Promise<{ slug: string }>;
+    }
+): Promise<Metadata> {
+    const params = await props.params;
+    return {
 		title: "Kieran McClung | Page " + params.slug,
 		description:
 			"What's he up to now? A blog by Kieran McClung | Page" + params.slug,
@@ -24,8 +25,9 @@ export async function generateMetadata({
 	};
 }
 
-export default async function Post({ params }: { params: { slug: string } }) {
-	const posts = await getAllPosts([
+export default async function Post(props: { params: Promise<{ slug: string }> }) {
+    const params = await props.params;
+    const posts = await getAllPosts([
 		"title",
 		"date",
 		"featuredImage",
@@ -34,18 +36,18 @@ export default async function Post({ params }: { params: { slug: string } }) {
 		"readTime",
 	]);
 
-	// convert the slug to a number
-	const totalPosts = posts.length;
-	const postsPerPage = 12;
-	const currentPage = parseInt(params.slug);
-	const pagination = currentPage * postsPerPage;
+    // convert the slug to a number
+    const totalPosts = posts.length;
+    const postsPerPage = 12;
+    const currentPage = parseInt(params.slug);
+    const pagination = currentPage * postsPerPage;
 
-	const paginatedPosts =
+    const paginatedPosts =
 		posts.length > pagination - 1
 			? posts.slice(pagination - postsPerPage, pagination)
 			: posts.slice(pagination - postsPerPage, posts.length);
 
-	return (
+    return (
 		<main>
 			<div className="p-8">
 				<h1 className="font-heading text-2xl">

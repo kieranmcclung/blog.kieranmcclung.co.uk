@@ -8,19 +8,20 @@ import Image from "next/image";
 import RelatedPosts from "../../../components/RelatedPosts";
 import PostBody from "@/components/PostBody";
 
-export async function generateMetadata({
-	params,
-}: {
-	params: { slug: string; categoryName: string };
-}): Promise<Metadata> {
-	const post = getPostBySlug(params.slug, params.categoryName, [
+export async function generateMetadata(
+    props: {
+        params: Promise<{ slug: string; categoryName: string }>;
+    }
+): Promise<Metadata> {
+    const params = await props.params;
+    const post = getPostBySlug(params.slug, params.categoryName, [
 		"title",
 		"featuredImage",
 		"seoTitle",
 		"seoDescription",
 	]);
 
-	if (typeof post !== "undefined") {
+    if (typeof post !== "undefined") {
 		const absUrlImage = `https://blog.kieranmcclung.co.uk${post.featuredImage}`;
 
 		return {
