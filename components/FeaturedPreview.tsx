@@ -10,7 +10,10 @@ type Items = {
 export default function HeroPostPreview({ post }: { post: Items }) {
 	return (
 		<article className="w-full mx-auto group">
-			<Link href={`/${post.categoryName}/${post.slug}`} className="relative">
+			<Link
+				href={`/${post.categoryName}/${post.slug}`}
+				className="block relative"
+			>
 				{post?.featuredImage && (
 					<figure className="block h-full overflow-hidden rounded-xl">
 						<Image

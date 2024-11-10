@@ -12,7 +12,7 @@ export default function PostPreview({ post }: { post: Items }) {
 		<article className="w-full mx-auto group">
 			<Link
 				href={`/${post.categoryName}/${post.slug}`}
-				className="flex gap-6 items-center"
+				className="block flex gap-6 items-center"
 			>
 				{post?.featuredImage && (
 					<figure className="block overflow-hidden relative rounded-xl shrink-0 w-1/4 lg:w-1/3 2xl:w-1/2">
