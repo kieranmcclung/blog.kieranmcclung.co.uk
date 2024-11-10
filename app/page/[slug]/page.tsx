@@ -49,7 +49,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
 		<main>
 			<div className="p-8">
 				<h1 className="font-heading text-2xl">
-					What's he up to?{" "}
+					What&apos;s he up to?{" "}
 					<span className="block text-sm">Page {currentPage}</span>
 				</h1>
 			</div>

@@ -38,7 +38,7 @@ export default async function Home() {
 	return (
 		<main>
 			<div className="p-8">
-				<h1 className="font-heading text-2xl">What's he up to?</h1>
+				<h1 className="font-heading text-2xl">What&apos;s he up to?</h1>
 			</div>
 
 			<div className="grid gap-8 mb-8 px-8 lg:grid-cols-[50%_auto] xl:grid-cols-[60%_auto]">

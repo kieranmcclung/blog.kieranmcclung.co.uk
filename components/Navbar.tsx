@@ -22,12 +22,12 @@ export default function Navbar() {
 
 	return (
 		<div className="flex flex-col gap-4 pt-8 px-8 md:h-svh md:pb-8 md:sticky md:top-0 md:w-48 xl:w-64">
-			<a
+			<Link
 				href="/"
 				className="font-heading text-sm transition-colors hover:text-indigo-600 dark:hover:text-indigo-500"
 			>
 				Kieran McClung
-			</a>
+			</Link>
 			<div className="flex items-center justify-start -ml-2">
 				<button
 					id="nav-toggle"
