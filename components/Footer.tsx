@@ -10,8 +10,8 @@ export default function Footer() {
 	}, []);
 
 	return (
-		<footer className="py-6 max-w-7xl mx-auto text-center">
-			<span className="font-heading mb-0 mt-auto text-sm md:hidden">
+		<footer className="py-6 max-w-7xl mx-auto text-center md:hidden">
+			<span className="font-heading mb-0 mt-auto text-sm">
 				&copy; {year}
 			</span>
 		</footer>

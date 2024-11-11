@@ -47,7 +47,7 @@ export default function Navbar() {
 					id="main-nav"
 					className={`${
 						(isOpen ? "" : "hidden") +
-						" bg-white fixed h-full py-4 w-full inset-0 z-10 sm:h-auto sm:static sm:block sm:bg-transparent dark:bg-black"
+						" bg-white fixed h-full py-4 w-full inset-0 z-10 md:h-auto md:static md:block md:bg-transparent dark:bg-black"
 					}`}
 				>
 					<ul className="flex flex-col gap-y-2 h-full items-center justify-center md:items-start">
