@@ -82,7 +82,17 @@ export default async function Post({ params }: { params: PostParams }) {
 			<div className="grid grid-cols-1 p-8 lg:gap-8 lg:grid-cols-[1fr_auto] 2xl:gap-16">
 				<main className="max-w-full mx-auto mb-12 md:max-w-screen-sm lg:mb-0 2xl:max-w-screen-lg">
 					<div className="mb-12 relative">
-						{post?.featuredImage && (
+						{post.instaUrl ? (
+							<figure className="block overflow-hidden rounded-xl">
+								<Image
+									alt={`cover image for ${post.title}`}
+									src={post.featuredImage}
+									height="1920"
+									width="1920"
+									className="aspect-square object-cover"
+								/>
+							</figure>
+						) : (
 							<figure className="block overflow-hidden rounded-xl">
 								<Image
 									alt={`cover image for ${post.title}`}
@@ -141,7 +151,7 @@ export default async function Post({ params }: { params: PostParams }) {
 					{post.instaUrl ? (
 						<a
 							href={post.instaUrl}
-							className="block font-bold underline decoration-2 decoration-pink-400 text-lg hover:text-slate-500"
+							className="block transition-colors text-indigo-600 dark:text-indigo-500 hover:text-black dark:hover:text-white md:pl-6 lg:text-lg"
 							target="_blank"
 						>
 							View on Instagram
