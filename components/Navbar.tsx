@@ -64,6 +64,11 @@ export default function Navbar() {
 						<li>
 							<NavLink href="/web">Web</NavLink>
 						</li>
+						<li>
+							<NavLink href="https://portfolio.kieranmcclung.co.uk/">
+								Portfolio
+							</NavLink>
+						</li>
 					</ul>
 				</nav>
 			</div>
