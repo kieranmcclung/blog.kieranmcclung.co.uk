@@ -52,13 +52,10 @@ export default function Navbar() {
 				>
 					<ul className="flex flex-col gap-y-2 h-full items-center justify-center md:items-start">
 						<li>
-							<NavLink href="/art">Art</NavLink>
+							<NavLink href="/art-design">Art &amp; Design</NavLink>
 						</li>
 						<li>
 							<NavLink href="/bullshit">Bullshit</NavLink>
-						</li>
-						<li>
-							<NavLink href="/design">Design</NavLink>
 						</li>
 						<li>
 							<NavLink href="/gaming">Gaming</NavLink>
