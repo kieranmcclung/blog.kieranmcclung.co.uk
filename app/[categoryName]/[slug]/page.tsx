@@ -80,7 +80,7 @@ export default async function Post({ params }: { params: PostParams }) {
 
 		return (
 			<div className="grid grid-cols-1 p-8 lg:gap-8 lg:grid-cols-[1fr_auto] 2xl:gap-16">
-				<main className="max-w-full mx-auto mb-12 md:max-w-screen-sm lg:mb-0 2xl:max-w-screen-lg">
+				<main className="max-w-full mx-auto mb-12 md:max-w-screen-sm lg:mb-0 xl:max-w-screen-md 2xl:max-w-screen-lg">
 					<div className="mb-12 relative">
 						{post.instaUrl ? (
 							<figure className="block overflow-hidden rounded-xl">
