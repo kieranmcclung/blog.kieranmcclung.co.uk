@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import SocialLinks from "./SocialLinks";
 
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -67,9 +68,10 @@ export default function Navbar() {
 				</nav>
 			</div>
 
-			<span className="font-heading hidden mb-0 mt-auto text-sm md:block">
+			<div className="font-heading hidden mb-0 mt-auto text-sm md:block">
+				<SocialLinks />
 				&copy; {year}
-			</span>
+			</div>
 		</div>
 	);
 }
