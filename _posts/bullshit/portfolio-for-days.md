@@ -20,5 +20,3 @@ But I got there in the end. I laid out a content plan, ticking off the elements 
 What's next? It's nice to finish a project that I started four years ago. It feels like a weight has lifted. I can now focus on doing some other creative bits. Become an artist? An author? An indie game developer? Or maybe I could redesign my blog.
 
 [Visit my Portfolio](https://portfolio.kieranmcclung.co.uk/)
-
-Featured image by [Sincerely Media](https://unsplash.com/@sincerelymedia) on [Unsplash](https://unsplash.com/photos/persons-right-hand-doing-thumbs-up-3KEFp35FVB0)
