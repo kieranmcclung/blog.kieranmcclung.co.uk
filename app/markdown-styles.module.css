@@ -29,6 +29,10 @@
 	@apply rounded-xl md:-mx-6 md:max-w-[calc(100%_+_1.5rem)];
 }
 
+.markdown ul {
+	@apply list-disc list-inside;
+}
+
 .markdown blockquote {
 	@apply border-l-4 border-black italic pl-4 dark:border-white;
 }
