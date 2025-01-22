@@ -29,7 +29,7 @@ export default function RootLayout({
 				className={`${ibm_plex_mono.variable} ${wix_madefor_text.variable} bg-white font-sans text-black md:grid md:grid-cols-site-layout dark:bg-black dark:text-white`}
 			>
 				<Navbar />
-				<div>
+				<div className="md:pb-8">
 					{children}
 					<Footer />
 				</div>

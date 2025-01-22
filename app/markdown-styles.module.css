@@ -6,7 +6,7 @@
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-	@apply my-6 text-lg;
+	@apply my-6 lg:text-lg;
 }
 
 .markdown h2 {
@@ -26,8 +26,11 @@
 }
 
 .markdown img {
-	@apply -mx-6 rounded-xl;
-	max-width: calc(100% + 1.5rem);
+	@apply rounded-xl md:-mx-6 md:max-w-[calc(100%_+_1.5rem)];
+}
+
+.markdown ul {
+	@apply list-disc list-inside;
 }
 
 .markdown blockquote {

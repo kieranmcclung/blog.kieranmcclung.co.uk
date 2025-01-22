@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import SocialLinks from "./SocialLinks";
 
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -47,18 +48,15 @@ export default function Navbar() {
 					id="main-nav"
 					className={`${
 						(isOpen ? "" : "hidden") +
-						" bg-white fixed h-full py-4 w-full inset-0 z-10 sm:h-auto sm:static sm:block sm:bg-transparent dark:bg-black"
+						" bg-white fixed h-full py-4 w-full inset-0 z-10 md:h-auto md:static md:block md:bg-transparent dark:bg-black"
 					}`}
 				>
 					<ul className="flex flex-col gap-y-2 h-full items-center justify-center md:items-start">
 						<li>
-							<NavLink href="/art">Art</NavLink>
+							<NavLink href="/art-design">Art &amp; Design</NavLink>
 						</li>
 						<li>
 							<NavLink href="/bullshit">Bullshit</NavLink>
-						</li>
-						<li>
-							<NavLink href="/design">Design</NavLink>
 						</li>
 						<li>
 							<NavLink href="/gaming">Gaming</NavLink>
@@ -66,13 +64,19 @@ export default function Navbar() {
 						<li>
 							<NavLink href="/web">Web</NavLink>
 						</li>
+						<li>
+							<NavLink href="https://portfolio.kieranmcclung.co.uk/">
+								Portfolio
+							</NavLink>
+						</li>
 					</ul>
 				</nav>
 			</div>
 
-			<span className="font-heading hidden mb-0 mt-auto text-sm md:block">
+			<div className="font-heading hidden mb-0 mt-auto text-sm md:block">
+				<SocialLinks />
 				&copy; {year}
-			</span>
+			</div>
 		</div>
 	);
 }

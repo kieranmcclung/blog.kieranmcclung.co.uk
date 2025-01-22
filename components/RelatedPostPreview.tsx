@@ -7,26 +7,25 @@ type Items = {
 	[key: string]: string;
 };
 
-export default function HeroPostPreview({ post }: { post: Items }) {
+export default function RelatedPostPreview({ post }: { post: Items }) {
 	return (
-		<article className="h-full w-full mx-auto group">
+		<article className="w-full mx-auto group">
 			<Link
 				href={`/${post.categoryName}/${post.slug}`}
-				className="block h-full relative"
+				className="block flex gap-6 items-center lg:max-xl:flex-wrap xl:flex-nowrap"
 			>
 				{post?.featuredImage && (
-					<figure className="block h-full overflow-hidden rounded-xl">
+					<figure className="block overflow-hidden relative rounded-xl shrink-0 w-1/4 lg:max-xl:w-1/2">
 						<Image
 							alt={`cover image for ${post.title}`}
 							src={post.featuredImage}
-							height="720"
-							width="1080"
-							className="aspect-video h-full object-cover transition-transform w-full group-hover:scale-105 max-md:aspect-square"
+							height="400"
+							width="400"
+							className="aspect-square object-cover transition-transform w-full group-hover:scale-105"
 						/>
 					</figure>
 				)}
-
-				<div className="absolute bg-white bottom-0 left-0 py-6 pr-6 rounded-tr-xl dark:bg-black max-md:w-11/12 md:pl-6">
+				<div className="space-y-2">
 					<div className="flex flex-wrap items-center mb-2 gap-x-1.5">
 						<DateFormatter dateString={post.date} />
 						{(post?.readTime && post.readTime != "0" && (

@@ -8,20 +8,18 @@ import Image from "next/image";
 import RelatedPosts from "../../../components/RelatedPosts";
 import PostBody from "@/components/PostBody";
 
-export async function generateMetadata(
-    props: {
-        params: Promise<{ slug: string; categoryName: string }>;
-    }
-): Promise<Metadata> {
-    const params = await props.params;
-    const post = getPostBySlug(params.slug, params.categoryName, [
+export async function generateMetadata(props: {
+	params: Promise<{ slug: string; categoryName: string }>;
+}): Promise<Metadata> {
+	const params = await props.params;
+	const post = getPostBySlug(params.slug, params.categoryName, [
 		"title",
 		"featuredImage",
 		"seoTitle",
 		"seoDescription",
 	]);
 
-    if (typeof post !== "undefined") {
+	if (typeof post !== "undefined") {
 		const absUrlImage = `https://blog.kieranmcclung.co.uk${post.featuredImage}`;
 
 		return {
@@ -81,10 +79,20 @@ export default async function Post({ params }: { params: PostParams }) {
 			posts.length > totalPosts - 1 ? posts.slice(0, totalPosts) : posts;
 
 		return (
-			<div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-16 p-8">
-				<main className="max-w-full md:max-w-3xl mx-auto lg:col-span-2 lg:ml-0">
-					<div className="mb-6 relative">
-						{post?.featuredImage && (
+			<div className="grid grid-cols-1 p-8 lg:gap-8 lg:grid-cols-[1fr_auto] 2xl:gap-16">
+				<main className="max-w-full mx-auto mb-12 md:max-w-screen-sm lg:mb-0 xl:max-w-screen-md 2xl:max-w-screen-lg">
+					<div className="mb-12 relative">
+						{post.instaUrl ? (
+							<figure className="block overflow-hidden rounded-xl">
+								<Image
+									alt={`cover image for ${post.title}`}
+									src={post.featuredImage}
+									height="1920"
+									width="1920"
+									className="aspect-square object-cover"
+								/>
+							</figure>
+						) : (
 							<figure className="block overflow-hidden rounded-xl">
 								<Image
 									alt={`cover image for ${post.title}`}
@@ -116,7 +124,7 @@ export default async function Post({ params }: { params: PostParams }) {
 						<PostBody content={post.content} imageSizes={imageSizes} />
 
 						{post.showDonationLink ? (
-							<div className="border border-black inline-flex items-center justify-center mt-4 pl-4 pr-8 rounded-xl dark:border-white">
+							<div className="border border-black inline-flex items-center justify-center mt-4 pl-4 pr-8 py-2 rounded-xl dark:border-white">
 								<Image
 									src="/kofi_s_logo_nolabel.png"
 									alt="Ko-fi logo"
@@ -143,7 +151,7 @@ export default async function Post({ params }: { params: PostParams }) {
 					{post.instaUrl ? (
 						<a
 							href={post.instaUrl}
-							className="block font-bold underline decoration-2 decoration-pink-400 text-lg hover:text-slate-500"
+							className="block transition-colors text-indigo-600 dark:text-indigo-500 hover:text-black dark:hover:text-white md:pl-6 lg:text-lg"
 							target="_blank"
 						>
 							View on Instagram

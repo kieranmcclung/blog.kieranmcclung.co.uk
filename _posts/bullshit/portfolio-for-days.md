@@ -1,7 +1,7 @@
 ---
 date: "2024-08-28T21:00:00.000Z"
 title: Portfolio for days
-featuredImage: /images/hero-fallback.jpg
+featuredImage: /images/product-page-mockup.jpg
 seoDescription: He's only gone and bloody finished his portfolio website!
 ---
 
@@ -20,5 +20,3 @@ But I got there in the end. I laid out a content plan, ticking off the elements 
 What's next? It's nice to finish a project that I started four years ago. It feels like a weight has lifted. I can now focus on doing some other creative bits. Become an artist? An author? An indie game developer? Or maybe I could redesign my blog.
 
 [Visit my Portfolio](https://portfolio.kieranmcclung.co.uk/)
-
-Featured image by [Sincerely Media](https://unsplash.com/@sincerelymedia) on [Unsplash](https://unsplash.com/photos/persons-right-hand-doing-thumbs-up-3KEFp35FVB0)
