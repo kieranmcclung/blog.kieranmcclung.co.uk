@@ -2,7 +2,7 @@
 date: "2024-03-16T19:49:00.000Z"
 title: 3D Impressions UK Logo
 featuredImage: /images/3d-imp.png
-instaUrl: https://www.instagram.com/p/C4llxEgirfe/
+instaUrl: 
 ---
 
 A logo design for a friend’s 3D printing business. I wanted to lean into something a bit more retro to contrast the modern nature of his business.
